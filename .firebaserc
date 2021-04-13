@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "jordanwebsite-6f6f3": {
+      "hosting": {
+        "JordanWebsite": [
+          "jordanwebsite-6f6f3"
+        ]
+      }
+    }
+  }
+}

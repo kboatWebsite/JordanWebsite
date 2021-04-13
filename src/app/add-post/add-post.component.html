@@ -1,0 +1,27 @@
+<h2>Create Post</h2>
+
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()" novalidate>
+        <div class="field mb-1">
+          <label class="label">Title</label>
+          <input type="text" formControlName="title" class="form-control" required>
+        </div>
+      
+        <div class="field mb-2">
+          <label class="label">Date</label>
+          <input type="date" formControlName="date" class="form-control" required>
+        </div>
+      
+        <div class="field mb-3">
+          <label class="label">Content</label>
+          <textarea rows="4" cols="40" id="content" type="text" formControlName="content" class="form-control" required placeholder="Enter text here"></textarea>
+        </div>
+
+        <div class="field mb-4">
+                <label class="label">Image ID</label>
+                <input type="text" formControlName="imageID" class="form-control" placeholder="If no image, enter 'none'" required>
+              </div>
+      
+        <div class="field mb-5">
+          <button type="submit" class="btn btn-primary" [disabled]="!postForm.valid">Create</button>
+        </div>
+      </form>
