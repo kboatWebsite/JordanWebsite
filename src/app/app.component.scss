@@ -1,5 +1,6 @@
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e2e2e2;
 }
 
 .navbar-header a {
@@ -19,7 +20,7 @@ footer {
     // position: absolute;
     bottom: 0;
     width: 100%;
-    position: sticky;
+    position: relative;
 }
 
 .github {
@@ -207,3 +208,39 @@ img.medium-icon {
 .middle {
     min-height: 450px;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    // border: 1px solid #e7e7e7;
+    // background-color: #f3f3f3;
+  }
+  
+  li h1 {
+    float: left;
+    padding-left: 30px
+  }
+
+  ul ul {
+      padding: 30px;
+  }
+  
+  li a {
+    float: right;
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #A9A9A9;
+  }

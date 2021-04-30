@@ -22,11 +22,6 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script> -->
-
-
-<div class="header">
-    <h2>Jordan Randolph</h2>
-  </div>
   
   <div class="row">
     <div class="leftcolumn">
@@ -40,8 +35,7 @@
       <div *ngFor="let post of Posts | async" class="card">
         <h2>{{ post.title }}</h2>
         <h5>{{ post.date }}</h5>
-        <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
-        <img *ngIf="post.imageID!='none'" class="postImage" src="http://drive.google.com/uc?export=view&id={{ post.imageID }}"  alt="Photo">
+        <img *ngIf="post.imageID!=''" class="postImage" src="http://drive.google.com/uc?export=view&id={{ post.imageID }}"  alt="Photo">
         <p>{{ post.content }}</p>
       </div>
     </div>

@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    // background-color: #DCDCDC;
   }
   
   /* Add a gray background color with some padding */
@@ -26,7 +27,8 @@
   /* Left column */
   .leftcolumn {   
     float: left;
-    width: 70%;
+    width: 65%;
+    padding: 25px 25px 25px 50px;
   }
   
   /* Right column */
@@ -55,6 +57,10 @@
     display: table;
     clear: both;
   }
+
+  .row {
+      padding-top: 20px;
+  }
   
   /* Footer */
   .footer {
@@ -70,7 +76,7 @@
   }
 
   .aboutImage {
-    max-width: 350px;
+    max-width: 290px;
     height: auto;
   }
   

@@ -20,6 +20,17 @@
   <ngx-spinner bdColor="rgb(221,214,243,0.5)" size="medium" type="ball-spin-fade" color="#42275a" fullScreen=" true">
     <p style="color: Black;font-size: 20px; font-weight: 600;">Loading News... </p>
 </ngx-spinner> -->
+<!-- <div class="header">
+    <h1>Jordan Randolph</h1>
+  </div> -->
+<ul>
+    <li><h1>Jordan Randolph</h1></li>
+    <ul>
+      <li><a [routerLink]="['/home']">Contact</a></li>
+      <li><a [routerLink]="['/about-me']">About</a></li>
+      <li><a class="active" href="#home">Home</a></li>
+    </ul>
+  </ul>
 
   <router-outlet></router-outlet>
 <!-- </div>

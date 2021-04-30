@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../post.service';
-import { Post } from '../post.model';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable } from 'rxjs';
 
@@ -10,13 +9,24 @@ import { Observable } from 'rxjs';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  // Posts: Post[] = [];
   Posts: Observable<any> = new Observable;
 
-  constructor(private postService:PostService, private db: AngularFireDatabase) { }
+  constructor(private db: AngularFireDatabase) { }
 
   ngOnInit(): void {
-    this.Posts = this.db.list<Post>("posts").valueChanges();
+    // var list = new Array;
+    this.Posts = this.db.list('/posts', ref => ref.orderByChild('priority')).valueChanges();
+    // var priority = this.db.list('/posts', ref => ref.orderByChild('priority').limitToFirst(1)).valueChanges();
+    // console.log(priority);
+    // this.Posts.subscribe(post => {
+    //   list.push(post);
+    // });
+    // list.sort((x, y) => {
+    //   console.log("x " + x);
+    //   console.log("y " + y);
+    //   return x.timestamp - y.timestamp;
+    // });
+    // console.log(list);
   }
 
 }

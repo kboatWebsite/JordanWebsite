@@ -8,7 +8,7 @@
       
         <div class="field mb-2">
           <label class="label">Date</label>
-          <input type="date" formControlName="date" class="form-control" required>
+          <input type="date" formControlName="date" class="form-control">
         </div>
       
         <div class="field mb-3">
@@ -18,10 +18,15 @@
 
         <div class="field mb-4">
                 <label class="label">Image ID</label>
-                <input type="text" formControlName="imageID" class="form-control" placeholder="If no image, enter 'none'" required>
+                <input type="text" formControlName="imageID" class="form-control">
               </div>
-      
+
         <div class="field mb-5">
+            <label class="label">Priority</label>
+            <input type="number" formControlName="priority" placeholder="Lower number = higher position" class="form-control">
+            </div>
+      
+        <div class="field mb-6">
           <button type="submit" class="btn btn-primary" [disabled]="!postForm.valid">Create</button>
         </div>
       </form>
