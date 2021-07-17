@@ -3,31 +3,38 @@
 }
 
 .footer {
-    position: absolute;
+    position: absolute !important;
     bottom: 0;
     width: 100%;
     // position: sticky;
 }
 
-.aboutImage {
+.row {
+    margin-top: 5%;
+}
+
+.center {
+    text-align: center;
+}
+
+.postImage {
+    width: 100%;
     max-width: 500px;
     height: auto;
-    width: 100%;
-}
-
-.card {
-    text-align: center;
-}
-
-#title {
-    text-align: center;
 }
 
 .content {
-    margin: 20px 7%;
+    white-space: pre-wrap;
+    margin: 2% 7%;
 }
 
-button {
+@media screen and (max-width: 890px) {
+    // #content {
+    //     margin: 0 68px;
+    // }
+  }
+
+  button {
     border: 2px solid black;
     padding: 14px 28px;
     font-size: 16px;
@@ -35,7 +42,7 @@ button {
     border-color: #e7e7e7;
 } 
 
-.row {
+  .row2 {
     text-align: center;
     margin: 4% 0;
 }

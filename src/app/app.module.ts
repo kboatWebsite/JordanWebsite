@@ -12,13 +12,19 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AddPostComponent } from './add-post/add-post.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ArchiveComponent } from './archive/archive.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutPageComponent,
     HomePageComponent,
-    AddPostComponent
+    AddPostComponent,
+    PostDetailComponent,
+    ContactPageComponent,
+    ArchiveComponent
   ],
   imports: [
     BrowserModule,

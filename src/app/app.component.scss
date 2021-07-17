@@ -1,6 +1,6 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e2e2e2;
+    
 }
 
 .navbar-header a {
@@ -8,6 +8,10 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 22px;
+}
+
+.nav {
+    background-color: #e2e2e2;
 }
 
 footer {
@@ -20,7 +24,17 @@ footer {
     // position: absolute;
     bottom: 0;
     width: 100%;
-    position: relative;
+    position: fixed;
+}
+
+.spacing {
+    margin-bottom: 72px;
+}
+
+@media screen and (max-width: 365px){
+    .spacing {
+        margin-bottom: 92px;
+    }
 }
 
 .github {
@@ -220,7 +234,7 @@ ul {
   
   li h1 {
     float: left;
-    padding-left: 30px
+    padding-left: 5%;
   }
 
   ul ul {

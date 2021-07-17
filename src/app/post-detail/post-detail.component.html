@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="leftcolumn">
+      <div *ngFor="let post of Posts | async" class="card center" id="post">
+        <h2>{{ post.title }}</h2>
+        <h5>{{ post.date }}</h5>
+        <img *ngIf="post.imageID!=''" class="postImage" src="http://drive.google.com/uc?export=view&id={{ post.imageID }}"  alt="Photo">
+        <div class="content">{{ post.content }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="row2">
+    <button [routerLink]="['/home']">Back to home</button>
+</div>

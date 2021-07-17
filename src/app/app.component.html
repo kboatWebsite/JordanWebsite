@@ -23,16 +23,17 @@
 <!-- <div class="header">
     <h1>Jordan Randolph</h1>
   </div> -->
-<ul>
+<ul class='nav'>
     <li><h1>Jordan Randolph</h1></li>
     <ul>
-      <li><a [routerLink]="['/home']">Contact</a></li>
+      <li><a [routerLink]="['/archive']">Post Archive</a></li>
+      <li><a [routerLink]="['/contact']">Contact</a></li>
       <li><a [routerLink]="['/about-me']">About</a></li>
-      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#home">Home</a></li>
     </ul>
   </ul>
 
-  <router-outlet></router-outlet>
+  <div class="spacing"><router-outlet></router-outlet></div>
 <!-- </div>
 
 

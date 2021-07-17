@@ -19,8 +19,9 @@
     background: white;
   }
 
-  h2.title {
-    padding-left: 18px;
+  .title {
+    margin-left:5%;
+    text-decoration-line: underline;
   }
 
   h2 {
@@ -33,21 +34,7 @@
     float: left;
     width: 65%;
     padding: 25px 25px 25px 50px;
-  }
-  
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 30%;
-    padding-left: 20px;
-    padding-top: 25px;
-  }
-  
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+    margin-left: 2%;
   }
   
   /* Add a card effect for articles */
@@ -74,18 +61,6 @@
     background: #ddd;
     margin-top: 20px;
   }
-
-  .postImage {
-    width: 100%;
-    max-width: 485px;
-    height: auto;
-  }
-
-  .aboutImage {
-    width: 100%;
-    max-width: 438px;
-    height: auto;
-  }
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
@@ -101,22 +76,4 @@
 
   .content {
     white-space: pre-wrap;
-}
-
-.limit-4 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  max-height: 110px;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-}
-
-.limit-2 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  max-height: 85px;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
 }

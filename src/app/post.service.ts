@@ -24,6 +24,12 @@ export class PostService {
     // return this.postsRef;
   }
 
+  getPostById(id: string) { 
+    // return this.angularFirestore
+    // .collection("posts", ref => ref.where('id', '==', id));
+    return this.angularFirestore.collectionGroup('posts', ref => ref.where('id', '==', id)).snapshotChanges();
+  }
+
   createPost(post: Post) {
     this.postsRef.push(post);
     // return this.angularFirestore.collection('Posts').add(Object.assign({}, post));

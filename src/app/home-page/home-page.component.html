@@ -32,22 +32,23 @@
         <p>Some text..</p>
         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
       </div> -->
-      <div *ngFor="let post of Posts | async" class="card">
-        <h2>{{ post.title }}</h2>
+      <h2 class="title">Latest Posts</h2>
+      <div *ngFor="let post of Posts | async" class="card" [routerLink]="['/post', post.id]" id="post">
+        <h3>{{ post.title }}</h3>
         <h5>{{ post.date }}</h5>
         <img *ngIf="post.imageID!=''" class="postImage" src="http://drive.google.com/uc?export=view&id={{ post.imageID }}"  alt="Photo">
-        <p>{{ post.content }}</p>
+        <div class="content limit-4">{{ post.content }}</div>
       </div>
     </div>
     <div class="rightcolumn">
       <div class="card">
-        <h2 [routerLink]="['/about-me']">About Me</h2>
+        <h3 [routerLink]="['/about-me']">About Me</h3>
         <img [routerLink]="['/about-me']" class="aboutImage" src="http://drive.google.com/uc?export=view&id=1kB-YERYrwK9ZZIKfEcEJDJTUvGr_wsgD" alt="Photo">
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        <p class="content limit-2">Some text about me in culpa qui officia deserunt mollit anim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
       </div>
       <div class="card">
-        <h3>Follow Me</h3>
-        <p>Some text..</p>
+        <h4>Follow Me</h4>
+        <p class="content limit-2">Some text..</p>
       </div>
     </div>
   </div>
